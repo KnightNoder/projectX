@@ -4,7 +4,7 @@
 			- @projects.each do |project|
 				%a{ href: (url_for [project])}
 					.project
-						%p.title= project.title
+						%p.title= project.name
 						%p.date= time_ago_in_words(project.created_at)
 		- else
 			%h2 Add a project
