@@ -1,0 +1,12 @@
+.wrapper_with_padding
+	#projects.clearfix
+		- unless @projects.blank?
+			- @projects.each do |project|
+				%a{ href: (url_for [project])}
+					.project
+						%p.title= project.title
+						%p.date= time_ago_in_words(project.created_at)
+		- else
+			%h2 Add a project
+			%p It appears you haven't created any projects yet... Lets fix that. Why don't you go ahead and create a new project.
+			%button= link_to "New project", new_project_path
