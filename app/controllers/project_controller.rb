@@ -7,6 +7,8 @@ class ProjectController < ApplicationController
 	end
 
 	def show
+		id = @project.id
+		@category = Category.where(project_id: id)
 	end
 
 	def new
