@@ -39,7 +39,9 @@ gem 'simple_form', '~> 4.0'
 gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
-
+gem 'erd' 
+# gem 'graphviz', '~> 1.0'
+gem 'rails-erd'
 
 
 group :development, :test do
