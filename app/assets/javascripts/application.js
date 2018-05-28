@@ -10,9 +10,20 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= requier jquery-ui
+//= require jquery
+//= require jquery-ui
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
+
 //= require bootstrap-sprockets
 //= require_tree .
+
+// var $ = jquery;
+$(document).ready(function () {
+  $('#booked').on('click',function(){
+    console.log('hey')
+    // $.ajax({
+
+    // })
+  })
+})
