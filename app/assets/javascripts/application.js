@@ -17,13 +17,3 @@
 
 //= require bootstrap-sprockets
 //= require_tree .
-
-// var $ = jquery;
-$(document).ready(function () {
-  $('#booked').on('click',function(){
-    console.log('hey')
-    // $.ajax({
-
-    // })
-  })
-})
