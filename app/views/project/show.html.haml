@@ -6,6 +6,7 @@
 					.project
 						%p.title= category.name
 						%p.date= time_ago_in_words(category.created_at)
+			%button.btn{"data-target" => "#myModal", "data-toggle" => "modal", :type => "button"} New Category
 		- else
 			%h2 Add a category
 			%p It appears you haven't created any categoryies yet... Lets fix that. Why don't you go ahead and create a new category.
